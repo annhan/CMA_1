@@ -1,6 +1,6 @@
 #include "Modbus485.h"
 
-bool cb(Modbus::ResultCode event, uint16_t transactionId, void* data) {
+inline bool cb(Modbus::ResultCode event, uint16_t transactionId, void* data) {
 	//Serial.printf_P("Request result: 0x%02X, Mem: %d\n", event, transactionId);
 	return true;
 }
