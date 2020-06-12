@@ -4,6 +4,7 @@
 #define FOR(i,a,b)		for (int i = a; i < b; i++)
 #define PENDING(NOW,SOON) ((int32_t)(NOW-(SOON))<0)
 #ifdef __cplusplus
+//template<typename T, typename X>
   template <class V, class N> static inline constexpr void NOLESS(V& v, const N n) {
     if (n > v) v = n;
   }
