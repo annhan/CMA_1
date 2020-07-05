@@ -13,13 +13,7 @@
 #define time_2_lan_nhan_data	5000
 #define time_cho_nhan_RFID_NV	8000
 
-#define button_left_pin		39
-#define button_right_pin	34
-#define buttonExitPin		36
-#define button_ok_pin		35
-#define buttonErrorPin		0
-#define pinPower			32
-#define pinReadPower		25
+
 
 #define pinBuzzer		4
 #define pinLedRed		2

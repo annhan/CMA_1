@@ -1,5 +1,6 @@
 #pragma once
-
+#ifndef __CMA_MAIN_H
+#define __CMA_MAIN_H
 #include "Arduino.h"
 #include "pins_arduino.h"
 
@@ -20,7 +21,7 @@ extern "C" {
 #include "SD.h"
 #include "RTClib.h"
 #include <SPI.h>
-#include <EasyButton.h>
+
 #include "Variable_wifi.h"
 #include "VarriableData.h"
 #define WEBSOCKET_DISABLED true
@@ -35,6 +36,8 @@ RemoteDebug Debug;
 #include "Modbus485.h"
 #include "TongHopData.h"
 
+#include "Button.h"
+#include "_MQTT.h"
 struct stateMachineConf stateMachine;
 struct statusPeripheralConf statusPeripheral;
 modbus485HMI mb;
@@ -383,7 +386,7 @@ void loop()
 		timeStamp = rtc.now();
 	}
 }
-
+#endif
 
 /*
 Wire.setClock(400000);  Cai Clock cho RTC
