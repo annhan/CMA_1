@@ -5,7 +5,7 @@
 	This code is licensed under the BSD New License. See LICENSE.txt for more info.
 */
 #pragma once
-#include <Modbus.h>
+#include "Modbus.h"
 #include <HardwareSerial.h>
 #if defined(ESP8266)
  #include <SoftwareSerial.h>

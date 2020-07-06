@@ -11,6 +11,8 @@ extern "C" {
 }
 
 #include <SPIFFS.h>
+#include <ESPAsyncWebServer.h>
+#include <AsyncMqttClient.h>
 //#include "webserver.h"
 #include "wifiSetting.h"
 //#include "./Lib/SaveFlash/SaveFlash.h"
