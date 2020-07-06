@@ -1,13 +1,21 @@
+//#ifndef __WIFISETTING_H
+//#define __WIFISETTINGS_H
 
-
-#ifndef __WIFISETTING_H
-#define __WIFISETTING_H
-
-#ifndef __CMA_MAIN_H
+//#ifndef __CMA_MAIN_H
 //#error "This file should not be included directly. Include CMA_Main.h instead."
+//#endif
+/*#ifdef __cplusplus
+extern "C" {
 #endif
+#include <stdint.h>
+#include <stdlib.h>
+#ifdef __cplusplus
+}
+#endif*/
+
 #define WIFI_CONF_FORMAT {0, 0, 0, 1}
 #define WIFI_CONF_START 0
+
 class WifiConf {
 public:
     struct Config_t {
@@ -27,4 +35,4 @@ public:
     };
     WifiConf(Config_t& data);
 };
-#endif
+//#endif
