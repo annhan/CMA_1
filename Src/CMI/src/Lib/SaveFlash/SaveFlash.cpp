@@ -2,16 +2,16 @@
 
 
 template<typename T>
-void EpromStruct::saveFlash (uint16_t address,T* data){
+bool EpromStruct::saveFlash (uint16_t BeginAddress,T* data){
     for (uint16_t t = 0; t < sizeof(T); t++) {
-		EEPROM.write(address + t, *(&data + t));
+		EEPROM.write(BeginAddress + t, *(&data + t));
 	}
 	return EEPROM.commit();
 }
 
 template<typename T>
-void EpromStruct::LoadFlash(uint16_t address, T* data){
+void EpromStruct::LoadFlash(uint16_t BeginAddress, T* data){
 		for (unsigned int t = 0; t < sizeof(T); t++) {
-			*(&data + t) = EEPROM.read(address + t); 
+			*(&data + t) = EEPROM.read(BeginAddress + t); 
 		}
 }
