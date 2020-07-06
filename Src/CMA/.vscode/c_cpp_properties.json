@@ -2,12 +2,34 @@
     "configurations": [
         {
             "name": "Win32",
-            "includePath": [
-                "C:\\Users\\annha\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**",
-                "C:\\Users\\annha\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.4\\**"
+            "defines": [
+                "ARDUINO=10800",
+                "ESP32"
             ],
+            
+            "includePath": [
+                "${workspaceRoot}",
+                "C:\\Users\\annha\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**",
+                "C:\\Users\\annha\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.4\\**",
+                "C:\\Users\\annha\\OneDrive\\Documents\\Arduino\\libraries\\**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\**",
+                "C:\\Program Files (x86)\\Arduino\\libraries\\**"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "${workspaceRoot}",
+                    "C:\\Users\\annha\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**",
+                    "C:\\Users\\annha\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.4\\**",
+                    "C:\\Users\\annha\\OneDrive\\Documents\\Arduino\\libraries\\**",
+                    "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\**",
+                    "C:\\Program Files (x86)\\Arduino\\libraries\\**"
+                ]
+            },
             "forcedInclude": [],
-            "intelliSenseMode": "msvc-x64"
+            "intelliSenseMode": "msvc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4

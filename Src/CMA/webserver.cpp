@@ -24,6 +24,7 @@ GPIO5 Reset
  //////////////////////////////////////////////////////////////////
  ////// Truyen tham so Html ////////////////////////////
  //////////////////////////////////////////////////////////////////
+ /*
 String processor(const String& var) {
 	char __dataFileName[sizeof(var)];
 	var.toCharArray(__dataFileName, sizeof(__dataFileName));
@@ -65,12 +66,7 @@ String processor(const String& var) {
 	}
 	return String();
 }
-/*
-  void handleUpdate(AsyncWebServerRequest *request) {
-  char* html = (char *)"<form method='POST' action='/doUpdate' enctype='multipart/form-data'><input type='file' name='update'><input type='submit' value='Update'></form>";
-  request->send(200, F("text/html"), html);
-  }
-*/
+
 void handleDoUpdate(AsyncWebServerRequest* request, const String& filename, size_t index, uint8_t* data, size_t len, bool final) {
 
 	if (!index) {
@@ -144,10 +140,6 @@ void setupWiFiConf(void) {
 		stateMachine.setPowerRFID();
 		statusPeripheral.updateRFID = true;
       //Serial.println(stateMachine.powerRFID, HEX);
-		/*if (request->hasParam(F("p"))) {
-			stateMachine.powerRFID = request->getParam(F("p"))->value().toInt();
-
-		}*/
 		request->send(200, PSTR(dataHtmlType), F("OK ...."));
 		});
 	server.on("/set_wifi_conf", HTTP_POST, [](AsyncWebServerRequest* request) {
@@ -199,3 +191,4 @@ void setupWiFiConf(void) {
 		request->send(SPIFFS, F("/favicon.ico"), F("image/png"));
 		});
 }
+*/
