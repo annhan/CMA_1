@@ -25,6 +25,6 @@ public:
         char mqtt_pass[64];
         char mqtt_subto1[64];
     };
-    WifiConf();
+    WifiConf(Config_t& data);
 };
 #endif
