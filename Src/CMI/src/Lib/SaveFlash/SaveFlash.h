@@ -3,8 +3,8 @@
 class EpromStruct{
 public:
     template<typename T>
-    void saveFlash (uint16_t address,T* data); 
+    bool saveFlash (uint16_t BeginAddress,T* data); 
 
     template<typename T>
-    void LoadFlash(uint16_t address, T* data);
+    void LoadFlash (uint16_t BeginAddress, T* data);
 };
