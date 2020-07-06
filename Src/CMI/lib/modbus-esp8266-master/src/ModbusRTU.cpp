@@ -5,7 +5,7 @@
 	This code is licensed under the BSD New License. See LICENSE.txt for more info.
 */
 #pragma once
-#include <ModbusRTU.h>
+#include "ModbusRTU.h"
 
 // Table of CRC values
 static const uint16_t _auchCRC[] PROGMEM = {

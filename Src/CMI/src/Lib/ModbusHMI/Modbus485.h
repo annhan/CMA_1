@@ -1,6 +1,6 @@
 
-	#include <ModbusRTU.h>
-	#include "cutf.h"
+#include "../../../lib/modbus-esp8266-master/src/ModbusRTU.h"
+#include "../CUTF/cutf.h"
 	bool cb(Modbus::ResultCode event, uint16_t transactionId, void* data);
 	class modbus485HMI :public ModbusRTU {
 	public:
