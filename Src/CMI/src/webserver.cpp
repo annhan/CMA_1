@@ -20,6 +20,7 @@ GPIO5 Reset
 
 
 
+
  //////////////////////////////////////////////////////////////////
  ////// Truyen tham so Html ////////////////////////////
  //////////////////////////////////////////////////////////////////
@@ -144,13 +145,13 @@ void WebServer::setupWiFiConf(void) {
 		request->send(SPIFFS, F("/update.html"));
 		});
 	// server.on("/firmware", HTTP_GET, [](AsyncWebServerRequest *request){request->send(SPIFFS, F("/index.html"));});
-	ServerWeb.on("/doUpdate", HTTP_POST, [](AsyncWebServerRequest* request) {},
+	/*ServerWeb.on("/doUpdate", HTTP_POST, [](AsyncWebServerRequest* request) {},
 		[](AsyncWebServerRequest* request, const String& filename, size_t index, uint8_t* data,
 			size_t len, bool final) {
-				WebServer::handleDoUpdate(request, filename, index, data, len, final);
-		});
+				handleDoUpdate(request, filename, index, data, len, final);
+		});*/
 	ServerWeb.on("/Reboot", HTTP_GET, [](AsyncWebServerRequest* request) {
-		request->send(200, PSTR(dataHtmlType), F("OK.. Rebooting"));
+		request->send(200, "s","OK.. Rebooting");
 		vTaskDelay(1000);
 		ESP.restart();
 		});

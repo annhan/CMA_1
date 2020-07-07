@@ -15,10 +15,11 @@ extern "C" {
 #include <AsyncMqttClient.h>
 //#include "webserver.h"
 #include "wifiSetting.h"
-//#include "./Lib/SaveFlash/SaveFlash.h"
-WifiConf::Config_t Wifi_config;
+#include "SaveFlash.h"
 
-WifiConf WifiConfn(WifiConf::Config_t Wifi_config);
+//class SaveEpromStruct;
+class WifiConf;
+
 #endif
 
 
