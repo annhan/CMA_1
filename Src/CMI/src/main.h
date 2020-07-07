@@ -1,7 +1,6 @@
-//#pragma once
-
 #ifndef __CMA_MAIN_H
 #define __CMA_MAIN_H
+#pragma once
 #include <Arduino.h>
 #include "pins_arduino.h"
 
