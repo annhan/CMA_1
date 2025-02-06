@@ -1,3 +1,4 @@
+NEW
 # Protocol giao tiếp giữa cân và cmicontroller
 
 ## Định nghĩa hằng số
